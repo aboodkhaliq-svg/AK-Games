@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK Games - Play Free Games</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AK Games - Play Free Games</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
 <header class="header">
-    <div class="logo" onclick="showHome()">
-        <span>AK</span> GAMES
-    </div>
-
+    <div class="logo" onclick="showHome()"><span>AK</span> GAMES</div>
     <nav>
         <button onclick="showHome()">Home</button>
         <button onclick="filterGames('Action')">Action</button>
@@ -21,98 +16,50 @@
         <button onclick="filterGames('Arcade')">Arcade</button>
         <button onclick="filterGames('Board')">Board</button>
     </nav>
-
     <div class="header-right">
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Search games..."
-            oninput="searchGames()"
-        >
+        <input type="text" id="searchInput" placeholder="Search games..." oninput="searchGames()">
     </div>
 </header>
-
-
 <main>
-
-    <!-- HOME -->
     <section id="homePage">
-
         <section class="hero">
             <div>
                 <div class="hero-badge">🎮 FREE ONLINE GAMES</div>
-
-                <h1>
-                    PLAY.
-                    <span>HAVE FUN.</span>
-                    REPEAT.
-                </h1>
-
-                <p>
-                    Play awesome games directly in your browser.
-                    No downloads. No installation.
-                </p>
-
-                <button class="play-btn" onclick="scrollToGames()">
-                    PLAY NOW →
-                </button>
+                <h1>PLAY. <span>HAVE FUN.</span> REPEAT.</h1>
+                <p>Play awesome games directly in your browser. No downloads. No installation.</p>
+                <button class="play-btn" onclick="scrollToGames()">PLAY NOW →</button>
             </div>
-
-            <div class="hero-controller">
-                🎮
-            </div>
+            <div class="hero-controller">🎮</div>
         </section>
-
-
         <section class="games-section" id="gamesSection">
-
             <div class="section-title">
-                <div>
-                    <small>OUR COLLECTION</small>
-                    <h2>POPULAR GAMES</h2>
-                </div>
-
-                <button class="all-btn" onclick="showAllGames()">
-                    VIEW ALL
-                </button>
+                <div><small>OUR COLLECTION</small><h2>POPULAR GAMES</h2></div>
+                <button class="all-btn" onclick="showAllGames()">VIEW ALL</button>
             </div>
-
             <div id="gameGrid" class="game-grid"></div>
-
         </section>
-
     </section>
-
-
-    <!-- GAME PAGE -->
     <section id="gamePage" class="game-page">
-
         <div class="game-topbar">
-            <button class="back-btn" onclick="showHome()">
-                ← BACK
-            </button>
-
+            <button class="back-btn" onclick="showHome()">← BACK</button>
             <h2 id="gameTitle">Game</h2>
-
-            <button class="restart-btn" onclick="restartCurrentGame()">
-                ↻ RESTART
-            </button>
+            <button class="restart-btn" onclick="restartCurrentGame()">↻ RESTART</button>
         </div>
-
         <div id="gameContainer" class="game-container"></div>
-
     </section>
-
 </main>
-
-
 <footer>
     <div class="footer-logo">AK GAMES</div>
     <p>Free browser games • Made with HTML, CSS & JavaScript</p>
 </footer>
-
-
-<script src="script.js"></script>
-
+<script src="home.js"></script>
+<script src="tictactoe.js"></script>
+<script src="chess.js"></script>
+<script src="snake.js"></script>
+<script src="memory.js"></script>
+<script src="2048.js"></script>
+<script src="reaction.js"></script>
+<script src="clicker.js"></script>
+<script src="guess.js"></script>
 </body>
 </html>
